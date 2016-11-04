@@ -4,13 +4,13 @@
     <p>Wines: en GridView Control (fra Data-delen af Visual Studios Toolbox). I denne control skal vises oplysninger om vinene, dvs. fra Wine-tabellen felterne WineName, WineDescription, Country, District, Year, Price
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="WineNo" DataSourceID="SqlDataSource1" EmptyDataText="There are no data records to display." AllowSorting="True">
         <Columns>
-            <asp:BoundField DataField="WineName" HeaderText="WineName" SortExpression="WineName" />
-            <asp:BoundField DataField="WineDescription" HeaderText="WineDescription" SortExpression="WineDescription" />
+            <asp:BoundField DataField="WineName" HeaderText="Wine Name" SortExpression="WineName" />
+            <asp:BoundField DataField="WineDescription" HeaderText="Description of Wine" SortExpression="WineDescription" />
             <asp:BoundField DataField="Supplier" HeaderText="Supplier" SortExpression="Supplier" />
             <asp:BoundField DataField="Country" HeaderText="Country" SortExpression="Country" />
             <asp:BoundField DataField="District" HeaderText="District" SortExpression="District" />
             <asp:BoundField DataField="Year" HeaderText="Year" SortExpression="Year" />
-            <asp:BoundField DataField="price" HeaderText="price" SortExpression="price" />
+            <asp:BoundField DataField="price" HeaderText="Price" SortExpression="price" />
             <asp:ImageField DataImageUrlField="Picture" DataImageUrlFormatString="~\Images\{0}" HeaderText="Picture" >
                 <ControlStyle CssClass="thumbnail"></ControlStyle>
             </asp:ImageField>
